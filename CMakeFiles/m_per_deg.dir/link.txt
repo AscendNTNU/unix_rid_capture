@@ -1,0 +1,1 @@
+/usr/bin/cc -Wall -Wno-parentheses -Wno-deprecated-declarations CMakeFiles/m_per_deg.dir/m_per_deg.c.o -o m_per_deg  -lm -lc 

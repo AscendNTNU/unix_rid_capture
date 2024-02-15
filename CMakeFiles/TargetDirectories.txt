@@ -1,0 +1,6 @@
+/home/andreasj0/Desktop/remoteid_receiver/RemoteID_Receiver/unix_rid_capture/CMakeFiles/rid_capture.dir
+/home/andreasj0/Desktop/remoteid_receiver/RemoteID_Receiver/unix_rid_capture/CMakeFiles/nrf_sniffer.dir
+/home/andreasj0/Desktop/remoteid_receiver/RemoteID_Receiver/unix_rid_capture/CMakeFiles/bluez_sniffer.dir
+/home/andreasj0/Desktop/remoteid_receiver/RemoteID_Receiver/unix_rid_capture/CMakeFiles/m_per_deg.dir
+/home/andreasj0/Desktop/remoteid_receiver/RemoteID_Receiver/unix_rid_capture/CMakeFiles/edit_cache.dir
+/home/andreasj0/Desktop/remoteid_receiver/RemoteID_Receiver/unix_rid_capture/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc -Wall -Wno-parentheses -Wno-deprecated-declarations CMakeFiles/nrf_sniffer.dir/nrf_sniffer.c.o -o nrf_sniffer  -lm -lc 

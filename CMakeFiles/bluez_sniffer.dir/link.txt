@@ -1,0 +1,1 @@
+/usr/bin/cc -Wall -Wno-parentheses -Wno-deprecated-declarations CMakeFiles/bluez_sniffer.dir/bluez_sniffer.c.o -o bluez_sniffer  -lbluetooth -lm -lc 
