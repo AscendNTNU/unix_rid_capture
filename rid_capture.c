@@ -947,6 +947,10 @@ void parse_odid(u_char *mac,u_char *payload,int length,int rssi,const char *note
 
       memcpy(&RID_data[RID_index].odid_data.BasicID[j],&UAS_data.BasicID[j],sizeof(ODID_BasicID_data));
 
+      sprintf(json,", \"uav type\" : %d",
+            (ODID_uatype_t) UAS_data.BasicID[j].UAType);
+      write_json(json);
+
       switch (UAS_data.BasicID[j].IDType) {
 
       case ODID_IDTYPE_SERIAL_NUMBER:
@@ -981,14 +985,27 @@ void parse_odid(u_char *mac,u_char *payload,int length,int rssi,const char *note
     sprintf(json,", \"uav latitude\" : %11.6f, \"uav longitude\" : %11.6f",
             latitude,longitude);
     write_json(json);
+
     sprintf(json,", \"uav altitude\" : %d, \"uav heading\" : %d",
            (int) UAS_data.Location.AltitudeGeo,(int) UAS_data.Location.Direction);
     write_json(json);
-#if 0
+
+    sprintf(json,", \"height\" : %d",
+           (int) UAS_data.Location.Height);
+    write_json(json);
+
+    sprintf(json,", \"horiz accuracy\" : %d",
+           (ODID_Horizontal_accuracy_t) UAS_data.Location.HorizAccuracy);
+    write_json(json);
+
+    sprintf(json,", \"vert accuracy\" : %d",
+           (ODID_Vertical_accuracy_t) UAS_data.Location.VertAccuracy);
+    write_json(json);
+
     sprintf(json,", \"uav speed horizontal\" : %d, \"uav speed vertical\" : %d",
            (int) UAS_data.Location.SpeedHorizontal,(int) UAS_data.Location.SpeedVertical);
     write_json(json);
-#endif
+
     sprintf(json,", \"uav speed\" : %d, \"seconds\" : %d",
            (int) UAS_data.Location.SpeedHorizontal,(int) UAS_data.Location.TimeStamp);
     write_json(json);
@@ -1033,6 +1050,10 @@ void parse_odid(u_char *mac,u_char *payload,int length,int rssi,const char *note
     write_json(json);
     sprintf(json,", \"unix time\" : %lu",
            ((unsigned long int) UAS_data.System.Timestamp) + ID_OD_AUTH_DATUM);
+    write_json(json);
+
+    sprintf(json,", \"operator altitude\" : %d",
+          ((int) UAS_data.System.OperatorAltitudeGeo));
     write_json(json);
 
     memcpy(&RID_data[RID_index].odid_data.System,&UAS_data.System,sizeof(ODID_System_data));

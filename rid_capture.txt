@@ -1,0 +1,9 @@
+{ "setup_time_ms" : 146 }
+{ "debug" : "rx packets 1 (0)", "loop_time_us" : 0, "max udp len" : 0 }
+{ "mac" : "e2:80:6e:3f:4c:89", "rssi" : 0, "base latitude" :    0.000000, "base longitude" :    0.000000, "unix time" : 1546300800 }
+{ "mac" : "e2:80:6e:3f:4c:89", "rssi" : 0, "uav id" : "1787F05BM24010011628" }
+{ "mac" : "e2:80:6e:3f:4c:89", "rssi" : 0, "base latitude" :    0.000000, "base longitude" :    0.000000, "unix time" : 1546300800 }
+{ "debug" : "rx packets 584 (3)", "loop_time_us" : 6, "max udp len" : 0 }
+{ "mac" : "e2:80:6e:3f:4c:89", "rssi" : 0, "uav id" : "1787F05BM24010011628" }
+{ "mac" : "e2:80:6e:3f:4c:89", "rssi" : 0, "base latitude" :    0.000000, "base longitude" :    0.000000, "unix time" : 1546300800 }
+{ "debug" : "rx packets 1160 (5)", "loop_time_us" : 5, "max udp len" : 0 }
